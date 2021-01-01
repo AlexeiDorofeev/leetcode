@@ -1,5 +1,5 @@
 import React from "react";
-import "./new/4-905.js";
+import "./standard/BinaryTree.js";
 
 const App = () => {
   return <div></div>;
