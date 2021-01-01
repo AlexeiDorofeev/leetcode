@@ -3,7 +3,6 @@ class ParkingSystem {
     this.slots = {
       1: big,
       2: medium,
-      et
       3: small,
     };
   }
