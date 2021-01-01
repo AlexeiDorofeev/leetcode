@@ -1,5 +1,5 @@
 import React from "react";
-import "./new/2-1678";
+import "./new/3-1486";
 
 const App = () => {
   return <div></div>;

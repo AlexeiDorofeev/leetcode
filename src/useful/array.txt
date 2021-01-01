@@ -1,0 +1,3 @@
+ Making an array from -> ...
+ 
+Array.from({ length: n }, (_, i) => start + 2 * i)
