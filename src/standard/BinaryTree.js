@@ -17,7 +17,7 @@ class BST {
       this.root = new Node(data);
       return;
     } else {
-      const searchTree = function (node) {
+      const searchTree = (node) => {
         if (data < node.data) {
           if (node.left === null) {
             node.left = new Node(data);
@@ -47,7 +47,7 @@ a.add(5);
 a.add(32);
 a.add(108);
 a.add(108);
-a.add(123);
+a.add(106);
 a.add(1);
 
 console.log(a);
