@@ -1,15 +1,17 @@
-/**
- * Definition for a binary tree node.
- * function TreeNode(val, left, right) {
- *     this.val = (val===undefined ? 0 : val)
- *     this.left = (left===undefined ? null : left)
- *     this.right = (right===undefined ? null : right)
- * }
- */
-/**
- * @param {TreeNode} root
- * @param {number} low
- * @param {number} high
- * @return {number}
- */
-var rangeSumBST = function (root, low, high) {};
+import { BST } from "../standard/BinaryTree";
+
+const rangeSumBST = (root, L, R) => {
+  let sum = 0;
+  const traverse = (root) => {
+    if (root.data >= L && root.data <= R) sum += root.data;
+    if (root.left !== null) traverse(root.left);
+    if (root.right !== null) traverse(root.right);
+  };
+  traverse(root);
+  return sum;
+};
+
+const a = new BST();
+a.addArray([10, 5, 15, 3, 7, 18]);
+
+console.log(rangeSumBST(a.root, 7, 15));

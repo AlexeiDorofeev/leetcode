@@ -6,7 +6,7 @@ class Node {
   }
 }
 
-class BST {
+export class BST {
   constructor() {
     this.root = null;
   }
@@ -39,15 +39,18 @@ class BST {
       return searchTree(node);
     }
   }
+
+  addArray(arr) {
+    arr.forEach((node) => {
+      return this.add(node);
+    });
+  }
 }
 
-const a = new BST();
-a.add(17);
-a.add(5);
-a.add(32);
-a.add(108);
-a.add(108);
-a.add(106);
-a.add(1);
-
-console.log(a);
+// const a = new BST();
+// a.add(10);
+// a.add(5);
+// a.add(15);
+// a.add(3);
+// a.add(7);
+// a.add(18);
