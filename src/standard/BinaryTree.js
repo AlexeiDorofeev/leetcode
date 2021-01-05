@@ -1,6 +1,6 @@
 class Node {
-  constructor(data, left = null, right = null) {
-    this.data = data;
+  constructor(val, left = null, right = null) {
+    this.val = val;
     this.left = left;
     this.right = right;
   }
@@ -18,14 +18,14 @@ export class BST {
       return;
     } else {
       const searchTree = (currentNode) => {
-        if (data < currentNode.data) {
+        if (data < currentNode.val) {
           if (currentNode.left === null) {
             currentNode.left = new Node(data);
             return;
           } else if (currentNode.left !== null) {
             return searchTree(currentNode.left);
           }
-        } else if (data > currentNode.data) {
+        } else if (data > currentNode.val) {
           if (currentNode.right === null) {
             currentNode.right = new Node(data);
             return;

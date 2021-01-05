@@ -3,9 +3,8 @@ const fib = (n) => {
 
   let a = 0;
   let b = 1;
-  let i = 2;
 
-  for (; i <= n; i++) {
+  for (let i = 1; i < n; i++) {
     const temp = a + b;
     a = b;
     b = temp;
@@ -14,10 +13,4 @@ const fib = (n) => {
   return b;
 };
 
-//   if (n === 0) return 0;
-//   if (n === 1) return 1;
-
-//   return fib(n - 1) + fib(n - 2);
-// };
-
-console.log(fib(7));
+console.log(fib(8));
