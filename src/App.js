@@ -1,5 +1,5 @@
 import React from "react";
-import "./new/21-496.js";
+import "./pairs/412.js";
 
 const App = () => {
   return <div></div>;
