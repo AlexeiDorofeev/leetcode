@@ -1,7 +1,8 @@
-const fizzBuzz = (n) =>
-  new Array(n)
+const fizzBuzz = (n) => {
+  return new Array(n)
     .fill(0)
-    .map((_, i) => (++i % 3 ? "" : "Fizz") + (i % 5 ? "" : "Buzz") || i + "");
+    .map((_, i) => (++i % 3 ? "" : "Fizz") + (i % 5 ? "" : "Buzz") || "" + i);
+};
 
 // const fizzBuzz = (n) => {
 //   const arr = [];
@@ -14,6 +15,4 @@ const fizzBuzz = (n) =>
 //   return arr;
 // };
 
-console.log(fizzBuzz(5));
-
-console.log(1 % 3);
+console.log(fizzBuzz(15));
