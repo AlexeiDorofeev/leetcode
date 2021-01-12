@@ -25,7 +25,7 @@ export class BST {
           } else if (currentNode.left !== null) {
             return searchTree(currentNode.left);
           }
-        } else if (data > currentNode.val) {
+        } else if (data >= currentNode.val) {
           if (currentNode.right === null) {
             currentNode.right = new Node(data);
             return;
